@@ -1,0 +1,8 @@
+.card-primary:not(.card-outline)>.card-header{
+    /* background-color: #272727 !important; */
+    background-color: #6c757d  !important;
+}
+.btn-color{
+    background-color: #6c757d  !important;
+    color:white;
+}

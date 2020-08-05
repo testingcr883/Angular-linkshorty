@@ -1,0 +1,83 @@
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- left column -->
+            <div class="col-md-12 m-2">
+              <!-- general form elements -->
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Add Products</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form (ngSubmit)="productsubmit()" #f="ngForm" name="form" novalidate>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Product Name</label>
+                      <input type="text" class="form-control" id="productname" name="productname" [(ngModel)]="productdetails.productname" placeholder="Product Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Price</label>
+                      <input type="text" class="form-control" id="price" name="price" [(ngModel)]="productdetails.price" placeholder="Price">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Quantity</label>
+                        <input type="number" class="form-control" id="qunatity" name="qunatity" [(ngModel)]="productdetails.qunatity" placeholder="Quantity">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Discount</label>
+                        <input type="number" class="form-control" id="discount" name="discount" [(ngModel)]="productdetails.discount" placeholder="Discount">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="exampleInputPassword1">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" [(ngModel)]="productdetails.quantity" placeholder="Price">
+                    </div> -->
+                    <div class="form-group">
+                        <label>Categories</label>
+                        <select class="form-control select2" id="categories" name="categories" [(ngModel)]="productdetails.categories" style="width: 100%;">
+                          <option selected="selected">Alabama</option>
+                          <option>Alaska</option>
+                          <!-- <option disabled="disabled">California (disabled)</option> -->
+                          <option>Delaware</option>
+                          <option>Tennessee</option>
+                          <option>Texas</option>
+                          <option>Washington</option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleInputFile">Product Image</label>
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" (change)="fileChangeEvent($event)" id="productimage" name="productimage" [(ngModel)]="productdetails.productimage">
+                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                        <!-- <div class="input-group-append">
+                          <span class="input-group-text" id="">Upload</span>
+                        </div> -->
+                      </div>
+                    </div>
+                   <!-- <img src="{{cardImageBase64}}" height="104px"; /> -->
+                    
+                  </div>
+                  <!-- /.card-body -->
+    
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-color">Submit</button>
+                  </div>
+                </form>
+              </div>
+              
+    
+            </div>
+            <!--/.col (left) -->
+            <!-- right column -->
+            
+            <!--/.col (right) -->
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+
+
+</div>
