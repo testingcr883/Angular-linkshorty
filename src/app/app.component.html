@@ -2,12 +2,14 @@
 <div class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-   <!-- header -->
-    <app-header></app-header>
+   <!-- header  *ngIf="showMenu && showLogin && has" -->
+    <app-header *ngIf="showMenu && showLogin && has">
+
+    </app-header>
    <!-- /.header -->
 
-   <!-- Navbar -->
-    <app-navbar></app-navbar>
+   <!-- Navbar  *ngIf="showMenu && showLogin && has" -->
+    <app-navbar *ngIf="showMenu && showLogin && has"></app-navbar>
    <!--/. Navbar -->
 
 
@@ -16,8 +18,8 @@
    <!--/.changing part-->
 
 
-   <!--footer-->
-    <footer class="main-footer">
+   <!--footer *ngIf="showMenu && showLogin && has"-->
+    <footer class="main-footer" *ngIf="showMenu && showLogin && has" >
      <app-footer></app-footer>
     </footer>
     <!--/.footer-->

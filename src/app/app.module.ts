@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { UsersComponent } from './users/users.component';
 import {HttpClientModule} from '@angular/common/http';
+import { RegistrationComponent } from './registration/registration.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import {HttpClientModule} from '@angular/common/http';
     ProductComponent,
     DashboardComponent,
     CategoriesComponent,
-    UsersComponent
+    UsersComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
